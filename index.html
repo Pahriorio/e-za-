@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Za Food</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">E-ZA<span>FOOD</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Selamat Datang di <span>E-ZA FOOD</span></h1>
+        <a href="#menu" class="cta">Lihat Menu</a>
+      </main>
+    </section>
+
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="ezafood1.jpeg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih E-ZA FOOD kami?</h3>
+          <p>
+            E-ZA FOOD adalah usaha rumahan yang menghadirkan olahan makanan khas
+            nusantara seperti Bandeng Presto, Pentol, dan Tahu Baso.
+          </p>
+          <p>
+            Semua produk kami dibuat dengan bahan pilihan, tanpa pengawet, dan
+            diolah langsung dari dapur kami untuk Anda.
+          </p>
+          <p>
+            Cita rasa lokal dengan kualitas istimewa, cocok untuk camilan
+            keluarga hingga oleh-oleh khas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="gallery">
+  <h2><span>Galeri</span> Produk</h2>
+  <div class="row">
+    <div class="gallery-card">
+      <img src="images/galeri1.jpg" alt="Bandeng Presto" />
+    </div>
+    <div class="gallery-card">
+      <img src="images/galeri2.jpg" alt="Pentol Ayam" />
+    </div>
+    <div class="gallery-card">
+      <img src="images/galeri3.jpg" alt="Tahu Baso" />
+    </div>
+    <div class="gallery-card">
+      <img src="images/galeri4.jpg" alt="Paket Spesial" />
+    </div>
+    <!-- Tambah sesuai kebutuhan -->
+  </div>
+</section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="ezafoodbandeng.jpeg"
+            alt="Bandeng Presto"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- SEDANG -</h3>
+          <p class="menu-card-price">Rp 15.000</p>
+        </div>
+        <div class="menu-card">
+          <img src="ezafoodpentol.jpeg" alt="PENTOL" class="menu-card-img" />
+          <h3 class="menu-card-title">- AYAM -</h3>
+          <p class="menu-card-price">Rp 10.000</p>
+        </div>
+
+        <div class="menu-card">
+          <img src="ezafoodtahu.jpeg" alt="TAHU BASO" class="menu-card-img" />
+          <h3 class="menu-card-title">- AYAM -</h3>
+          <p class="menu-card-price">Rp 10.000</p>
+        </div>
+        <!-- Tambahkan menu lainnya sesuai kebutuhan -->
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2><span>Kontak</span> Kami</h2>
+  <p>
+    Ingin pesan atau tanya-tanya dulu? Hubungi kami, dan nikmati lezatnya
+    Bandeng Presto, Pentol, dan Tahu Baso rumahan langsung ke rumah Anda!
+  </p>
+  <div class="row">
+    <!-- Google Maps -->
+    <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.189667215975!2d114.56980557407913!3d-3.3031923411551003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4233bc02938a1%3A0x8f719588dc4fe98f!2sE-Za%20Food!5e0!3m2!1sid!2sid!4v1749116795044!5m2!1sid!2sid" 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius:10px;"
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+    <!-- Contact Form -->
+    <form onsubmit="kirimPesan(); return false;" style="margin-top:20px;">
+      <div class="input-group">
+        <i data-feather="user"></i>
+        <input type="text" id="nama" placeholder="Nama" required />
+      </div>
+      <div class="input-group">
+        <i data-feather="mail"></i>
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="input-group">
+        <i data-feather="message-circle"></i>
+        <input type="text" id="pesan" placeholder="Pesan" required />
+      </div>
+      <button type="submit" class="btn">Kirim Pesan via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- Script Kirim ke WhatsApp -->
+<script>
+  function kirimPesan() {
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var pesan = document.getElementById("pesan").value;
+    var nomorWA = "6285349568400"; // ganti dengan nomor WA kamu tanpa +62
+
+    var teks = `Halo, saya *${nama}* (${email}) ingin pesan/tanya: %0A${pesan}`;
+    var url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(teks)}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>
+          Made with ❤️
+          <a href="#"></a>
+            by E-ZA FOOD | Usaha Rumahan Rasa Bintang Lima ⭐⭐⭐⭐⭐</a
+          >. | &copy; 2025.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
